@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import Loader from "./Loader"; // بارگذاری کامپوننت Loader
-import './App.css'; // فایل CSS شما
-import frameImage from './Frame2.png'; // وارد کردن تصویر
+import './App.css'; 
+import frameImage from './Frame2.png'; 
 
 
 
 
 function App() {
   const [isLoading, setIsLoading] = useState(true); // وضعیت بارگذاری
-  const [isWelcomeVisible, setIsWelcomeVisible] = useState(true); // نمایش پیام خوش آمد گویی
+  const [isWelcomeVisible, setIsWelcomeVisible] = useState(true); 
   const [isContentVisible, setIsContentVisible] = useState(false); // نمایش محتوای اصلی
 
   // تنظیم زمان لودینگ
@@ -32,7 +32,7 @@ function App() {
   }, [isLoading]);
 
   if (isLoading) {
-    return <Loader />; // در حین بارگذاری کامپوننت Loader را نمایش بده
+    return <Loader />; 
   }
 
   return (
@@ -40,7 +40,7 @@ function App() {
       <header className="App-header">
         {isWelcomeVisible && <h1>Welcome to BualiCoin!</h1>} 
         {isContentVisible && (
-          <div>
+          <div className="image-container">
             {}
             
             <img src={frameImage}  alt="Your Content" />

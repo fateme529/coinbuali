@@ -27,17 +27,22 @@
 .App-link {
   color: #61dafb;
 }
-.fixed-image {
-  width: 100%; 
-  height: auto; 
-  object-fit: cover;
-  object-position: center; 
+.image-container {
+  width: 100%; /* عرض کامل */
+  height: 100vh; /* ارتفاع کامل صفحه */
+  overflow: auto; /* فعال کردن اسکرول */
+  position: relative; /* برای قرارگیری تصویر در مرکز */
 }
 
-.content-container {
-  text-align: center; 
-  margin-top: 20px; 
+.image-container img {
+  width: 100%;
+  height: auto; /* نسبت تصویر حفظ می‌شود */
+  object-fit: contain; /* فیت کردن تصویر به شکلی که تناسب ابعاد حفظ شود */
 }
+
+
+
+
 
 
 @keyframes App-logo-spin {

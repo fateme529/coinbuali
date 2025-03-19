@@ -89,7 +89,9 @@ function App() {
                         outline: "none", 
                      }} />
               </div>
-              <button type="submit">ثبت نام</button>
+        
+              <button className="submit-button">واردشوید</button>
+              
             </form>
           </div>
         )}

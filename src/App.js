@@ -50,6 +50,7 @@ function App() {
      
         {isRegisterVisible && (
           <div className="register-container">
+           <img src={frameSigup}  alt="sigup" />
             <h2>فرم ثبت نام</h2>
             <form>
               <input type="text" placeholder="نام کاربری" />

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Loader from "./Loader"; 
 import './App.css'; 
 import frameImage from './Frame2.png'; 
-import frameSigup from './MacBook Air - 2.png'; 
+import frameSigup from './MacBook Air - 1.png'; 
 
 
 
@@ -51,9 +51,23 @@ function App() {
         {isRegisterVisible && (
           <div className="register-container">
            <img src={frameSigup}  alt="sigup" />
-            <h2>فرم ثبت نام</h2>
+            
             <form>
-              <input type="text" placeholder="نام کاربری" />
+            <div className="input-username">
+              <input type="text" placeholder="نام کاربری"
+              style={{
+    padding: "10px",
+    margin: "10px",
+    width: "100%",
+    maxWidth: "300px",
+   border: "none",
+    borderRadius: "5px",
+    backgroundColor: "#213A4A",  
+    color: "white",
+    fontSize: "16px",
+    outline: "none", 
+  }} />
+              </div>
               <input type="password" placeholder="رمز عبور" />
               <button type="submit">ثبت نام</button>
             </form>

@@ -72,7 +72,22 @@ function App() {
                      }} />
               </div>
               <div className="input-password">
-              <input type="password" placeholder="رمز عبور" />
+              <input type="password" placeholder="رمز عبور" 
+              style={{
+                        position: "absolute",
+                        top: "410px", 
+                        right: "604px",
+                        padding: "23px",
+                        //margin: "10px",
+                        width: "50%",
+                        maxWidth: "199px",
+                      border: "none",
+                        borderRadius: "15px",
+                        backgroundColor: "#757575",  
+                        color: "white",
+                        fontSize: "16px",
+                        outline: "none", 
+                     }} />
               </div>
               <button type="submit">ثبت نام</button>
             </form>

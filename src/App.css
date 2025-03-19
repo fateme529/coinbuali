@@ -102,12 +102,27 @@
  font-Size: 16px;
  outline: none;
  }
-
-
-
-
-
  
+ .input-username {
+  position: absolute;
+  top: 310px;
+  right:599px;
+  padding:23px;
+  margin: 10px;
+  width: 50%;
+  max-Width: 199px;
+  border: none;
+  border-Radius: 15px;
+  background-Color: #757575; 
+  color: white;
+  font-Size: 16px;
+  outline: none;
+ }
+
+
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

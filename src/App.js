@@ -53,25 +53,9 @@ function App() {
            <img src={frameSigup}  alt="sigup" />
             
             <form>
-            <div className="input-username">
-              <input type="text" placeholder="نام کاربری"
-              style={{
-                        position: "absolute",
-                        top: "319px", 
-                        right: "604px",
-                        padding: "23px",
-                        //margin: "10px",
-                        width: "50%",
-                        maxWidth: "199px",
-                      border: "none",
-                        borderRadius: "15px",
-                        backgroundColor: "#757575",  
-                        color: "white",
-                        fontSize: "16px",
-                        outline: "none", 
-                     }} />
-              </div>
-        
+          
+              <input className="input-username"placeholder="نام کاربری" />
+            
               <input className="input-password" placeholder="رمز عبور" />
       
               <button className="submit-button">واردشوید</button>

@@ -56,19 +56,24 @@ function App() {
             <div className="input-username">
               <input type="text" placeholder="نام کاربری"
               style={{
-    padding: "10px",
-    margin: "10px",
-    width: "100%",
-    maxWidth: "300px",
-   border: "none",
-    borderRadius: "5px",
-    backgroundColor: "#213A4A",  
-    color: "white",
-    fontSize: "16px",
-    outline: "none", 
-  }} />
+                        position: "absolute",
+                        top: "319px", 
+                        right: "604px",
+                        padding: "23px",
+                        //margin: "10px",
+                        width: "50%",
+                        maxWidth: "199px",
+                      border: "none",
+                        borderRadius: "15px",
+                        backgroundColor: "#757575",  
+                        color: "white",
+                        fontSize: "16px",
+                        outline: "none", 
+                     }} />
               </div>
+              <div className="input-password">
               <input type="password" placeholder="رمز عبور" />
+              </div>
               <button type="submit">ثبت نام</button>
             </form>
           </div>

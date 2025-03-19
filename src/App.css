@@ -72,9 +72,9 @@
 
 .submit-button{
   position: absolute;
-  top: 10px; 
-  right: 209px; 
-
+  top: 509px; 
+  right: 603px; 
+  width: 22%;
   padding: 16px 35px;
   font-size: 16px;
   cursor: pointer;

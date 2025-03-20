@@ -3,6 +3,7 @@ import Loader from "./Loader";
 import './App.css'; 
 import frameImage from './Frame2.png'; 
 import frameSigup from './MacBook Air - 4.png'; 
+import frameSabt from './MacBook Air - 2.png'; 
 
 
 
@@ -12,6 +13,7 @@ function App() {
   const [isWelcomeVisible, setIsWelcomeVisible] = useState(true); 
   const [isContentVisible, setIsContentVisible] = useState(false); 
   const [isRegisterVisible, setIsRegisterVisible] = useState(false); 
+  const [isSigupVisible, setIsSigupVisible] = useState(false); 
  
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -40,18 +42,18 @@ function App() {
     <div className="App">
       <header className="App-header">
         {isWelcomeVisible && <h1>Welcome to BualiCoin!</h1>} 
-        {isContentVisible &&  !isRegisterVisible && (
+        {isContentVisible &&  !isRegisterVisible && !isSigupVisible  && (
           <div className="image-container">
 
             <img src={frameImage}  alt="Your Content" />
-            <button className="register-button"onClick={() => setIsRegisterVisible(true)}>ثبت نام</button>
-            <button className="signup-button"onClick={() => setIsRegisterVisible(true)}>ورود</button>
+            <button className="register-button"onClick={() => setIsSigupVisible(true)}>ثبت نام</button>
+            <button className="signup-button"onClick={() =>setIsRegisterVisible(true) }>ورود</button>
           </div>
         )}
      
         {isRegisterVisible && (
           <div className="register-container">
-           <img src={frameSigup}  alt="sigup" />
+           <img src={frameSigup}  alt="register" />
             
             <form>
           
@@ -60,6 +62,19 @@ function App() {
               <input className="input-password" placeholder="رمز عبور" />
       
               <button className="submit-button">واردشوید</button>
+              
+            </form>
+          </div>
+        )}
+          {isSigupVisible && (
+          <div className="Sabt-container">
+           <img src={frameSabt}  alt="sigup" />
+            
+            <form>
+          
+           
+           
+  
               
             </form>
           </div>

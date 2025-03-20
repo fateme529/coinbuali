@@ -52,7 +52,7 @@
 }
 
 
-.signup-button {
+.register-button{
   position: absolute;
   top: 10px; 
   right: 209px; 
@@ -66,9 +66,10 @@
   border-radius: 10px;
 }
 
-.signup-button:hover {
+.register-button:hover {
  background-color: #213A4A;
 }
+ 
 
 .submit-button{
   position: absolute;

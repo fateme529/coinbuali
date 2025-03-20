@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Loader from "./Loader"; 
 import './App.css'; 
 import frameImage from './Frame2.png'; 
-import frameSigup from './MacBook Air - 1.png'; 
+import frameSigup from './MacBook Air - 4.png'; 
 
 
 
@@ -44,7 +44,8 @@ function App() {
           <div className="image-container">
 
             <img src={frameImage}  alt="Your Content" />
-            <button className="signup-button"onClick={() => setIsRegisterVisible(true)}>ثبت نام</button>
+            <button className="register-button"onClick={() => setIsRegisterVisible(true)}>ثبت نام</button>
+            <button className="signup-button"onClick={() => setIsRegisterVisible(true)}>ورود</button>
           </div>
         )}
      

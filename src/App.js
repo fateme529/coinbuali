@@ -72,7 +72,7 @@ function App() {
             
             <form>
           
-           
+            <input className="input-name"placeholder="نام " />
            
   
               

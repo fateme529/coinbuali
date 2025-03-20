@@ -77,6 +77,8 @@ function App() {
             <input className="input-familiname"placeholder="         نام خانوادگی" />
             
             <input className="input-phonenumber"placeholder="        شماره همراه" />
+
+            <input className="input-gmail"placeholder="              ایمیل  " />
            
   
               

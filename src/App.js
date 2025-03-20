@@ -72,7 +72,9 @@ function App() {
             
             <form>
           
-            <input className="input-name"placeholder="نام " />
+            <input className="input-name"placeholder="               نام " />
+
+            <input className="input-familiname"placeholder="         نام خانوادگی" />
            
   
               

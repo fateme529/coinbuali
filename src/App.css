@@ -204,6 +204,38 @@
 
 
 
+ .input-password {
+  position: absolute;
+  top: 365px;
+  right:623px;
+  width: 11.5%; 
+
+  padding:14px;
+  max-Width: 199px;
+  border: none;
+  border-Radius: 15px;
+  background-Color: #757575; 
+  color: white;
+  font-Size: 16px;
+  outline: none;
+ }
+
+
+ .input-repetitionpassword {
+  position: absolute;
+  top: 440px;
+  right:631px;
+  width: 11.5%; 
+
+  padding:14px;
+  max-Width: 199px;
+  border: none;
+  border-Radius: 15px;
+  background-Color: #757575; 
+  color: white;
+  font-Size: 16px;
+  outline: none;
+ }
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

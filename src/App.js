@@ -79,6 +79,10 @@ function App() {
             <input className="input-phonenumber"placeholder="        شماره همراه" />
 
             <input className="input-gmail"placeholder="              ایمیل  " />
+
+            <input className="input-password"placeholder="           رمز عبور   " />
+
+            <input className="input-repetitionpassword"placeholder="       تکرار رمز عبور  " />
            
   
               

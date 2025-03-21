@@ -167,21 +167,7 @@
  color: white;
 }
  -----------------------------------------------------------------------------------------------------------------------------
- .input-password {
-  position: absolute;
-  top: 400px;
-  right: 599px;
-  padding: 23px;
-  margin: 10px;
-  width: 50%;
-  max-Width: 199px;
-  border: none;
-  border-Radius: 15px;
-  background-Color: #757575;  
-  color: white;
-  font-Size: 16px;
-  outline: none;
-  }
+
 
  .input-name {
   position: absolute;
@@ -251,8 +237,8 @@
 
  .input-password {
   position: absolute;
-  top:415px;
-  right:623px;
+  top:425px;
+  right:631px;
   width: 11.5%; 
 
   padding:14px;

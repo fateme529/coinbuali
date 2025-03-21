@@ -51,7 +51,7 @@ function App() {
           </div>
         )}
      
-        {isRegisterVisible && (
+        {isRegisterVisible && !isSigupVisible && (
           <div className="register-container">
            <img src={frameSigup}  alt="sigup" />
             
@@ -62,12 +62,15 @@ function App() {
               <input className="input-password_v" placeholder="رمز عبور" />
       
               <button className="submit-button">واردشوید</button>
-              <button className="quetion1-button">هنوز هیج اکانتی ندارید؟</button>
+              <button 
+        className="quetion1-button" 
+        onClick={() => {setIsSigupVisible(true); setIsRegisterVisible(false);}} > هنوز هیچ اکانتی نداری؟ </button>
+
               
             </form>
           </div>
         )}
-          {isSigupVisible && (
+          {isSigupVisible && !isRegisterVisible &&(
           <div className="Sabt-container">
            <img src={frameSabt}  alt="sabt" />
             

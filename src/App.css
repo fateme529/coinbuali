@@ -58,6 +58,7 @@
 }
 
 .Sabt-container img{
+
   width: 100%;
   height: auto; 
   object-fit: contain; 
@@ -151,7 +152,7 @@
 
  .input-name {
   position: absolute;
-  top: 120px;
+  top:  185px;
   right:631px;
   width: 11.5%; 
 
@@ -167,7 +168,7 @@
 
  .input-familiname {
   position: absolute;
-  top: 185px;
+  top:245px;
   right:631px;
   width: 11.5%; 
 
@@ -183,7 +184,7 @@
 
  .input-phonenumber {
   position: absolute;
-  top: 245px;
+  top: 305px;
   right:631px;
   width: 11.5%; 
 
@@ -199,7 +200,7 @@
 
  .input-gmail {
   position: absolute;
-  top: 310px;
+  top:  365px;
   right:631px;
   width: 11.5%; 
 
@@ -217,7 +218,7 @@
 
  .input-password {
   position: absolute;
-  top: 365px;
+  top:415px;
   right:623px;
   width: 11.5%; 
 
@@ -234,7 +235,7 @@
 
  .input-repetitionpassword {
   position: absolute;
-  top: 440px;
+  top: 485px;
   right:631px;
   width: 11.5%; 
 

@@ -53,7 +53,7 @@ function App() {
      
         {isRegisterVisible && (
           <div className="register-container">
-           <img src={frameSigup}  alt="register" />
+           <img src={frameSigup}  alt="sigup" />
             
             <form>
           
@@ -68,7 +68,7 @@ function App() {
         )}
           {isSigupVisible && (
           <div className="Sabt-container">
-           <img src={frameSabt}  alt="sigup" />
+           <img src={frameSabt}  alt="sabt" />
             
             <form>
           

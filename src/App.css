@@ -152,8 +152,8 @@
  }
 .quetion1-button{
   position: absolute;
-  top: 10px; 
-  right: 209px; 
+  top: 580px; 
+  right: 550px; 
 
   padding: 16px 35px;
   font-size: 16px;
@@ -162,6 +162,9 @@
   background-color:#282c34;
   color: #213A4A;
   border-radius: 10px;
+}
+.quetion1-button:hover {
+ color: white;
 }
  -----------------------------------------------------------------------------------------------------------------------------
  .input-password {

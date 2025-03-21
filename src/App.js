@@ -57,9 +57,9 @@ function App() {
             
             <form>
           
-              <input className="input-username"placeholder="نام کاربری" />
+              <input className="input-username1"placeholder="نام کاربری" />
             
-              <input className="input-password" placeholder="رمز عبور" />
+              <input className="input-password_v" placeholder="رمز عبور" />
       
               <button className="submit-button">واردشوید</button>
               

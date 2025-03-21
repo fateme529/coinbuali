@@ -117,38 +117,54 @@
 .submit-button:hover {
   background-color: #213A4A;
  }
-
- .input-password {
- position: absolute;
- top: 400px;
- right: 597px;
- padding: 23px;
- margin: 10px;
- width: 50%;
- max-Width: 199px;
- border: none;
- border-Radius: 15px;
- background-Color: #757575;  
- color: white;
- font-Size: 16px;
- outline: none;
- }
- 
- .input-username {
+ .input-password_v{
   position: absolute;
-  top: 310px;
-  right:599px;
-  padding:23px;
+  top: 399px;
+  right: 620px;
+  padding: 20px;
+  margin: 10px;
+  width: 50%;
+  max-Width: 190px;
+  border: none;
+  border-Radius: 15px;
+  background-Color: #757575;  
+  color: white;
+  font-Size: 16px;
+  outline: none;
+ }
+
+
+ 
+ .input-username1 {
+  position: absolute;
+  top: 320px;
+  right: 620px;
+  padding: 20px;
+  margin: 10px;
+  width: 50%;
+  max-Width: 190px;
+  border: none;
+  border-Radius: 15px;
+  background-Color: #757575;  
+  color: white;
+  font-Size: 16px;
+  outline: none;
+ }
+ .input-password {
+  position: absolute;
+  top: 400px;
+  right: 599px;
+  padding: 23px;
   margin: 10px;
   width: 50%;
   max-Width: 199px;
   border: none;
   border-Radius: 15px;
-  background-Color: #757575; 
+  background-Color: #757575;  
   color: white;
   font-Size: 16px;
   outline: none;
- }
+  }
 
  .input-name {
   position: absolute;

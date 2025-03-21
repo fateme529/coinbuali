@@ -3,7 +3,7 @@ import Loader from "./Loader";
 import './App.css'; 
 import frameImage from './Frame2.png'; 
 import frameSigup from './MacBook Air - 4.png'; 
-import frameSabt from './MacBook Air - 2.png'; 
+import frameSabt from './MacBook Air - 5.png'; 
 
 
 

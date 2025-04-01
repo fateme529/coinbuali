@@ -1,20 +1,19 @@
 import { useState, useEffect } from "react";
 import Loader from "./Loader"; 
-import './App.css'; 
-import frameImage from './Frame2.png'; 
-import frameSigup from './MacBook Air - 4.png'; 
-import frameSabt from './MacBook Air - 7.png'; 
-
-
-
+import "./App.css";
+import frameImage from "./Frame2.png";
+import frameSigup from "./MacBook Air - 4.png";
+import frameSabt from "./MacBook Air - 7.png";
+import frameprofile from "./MacBook Air - 9.png";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true); 
-  const [isWelcomeVisible, setIsWelcomeVisible] = useState(true); 
-  const [isContentVisible, setIsContentVisible] = useState(false); 
-  const [isRegisterVisible, setIsRegisterVisible] = useState(false); 
-  const [isSigupVisible, setIsSigupVisible] = useState(false); 
- 
+  const [isLoading, setIsLoading] = useState(true);
+  const [isWelcomeVisible, setIsWelcomeVisible] = useState(true);
+  const [isContentVisible, setIsContentVisible] = useState(false);
+  const [isRegisterVisible, setIsRegisterVisible] = useState(false);
+  const [isSigupVisible, setIsSigupVisible] = useState(false);
+  const [isProfileVisible, setIsProfileVisible] = useState(false);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
@@ -26,73 +25,64 @@ function App() {
   useEffect(() => {
     if (!isLoading) {
       const welcomeTimer = setTimeout(() => {
-        setIsWelcomeVisible(false); 
-        setIsContentVisible(true); 
+        setIsWelcomeVisible(false);
+        setIsContentVisible(true);
       }, 2000);
 
-      return () => clearTimeout(welcomeTimer); 
+      return () => clearTimeout(welcomeTimer);
     }
   }, [isLoading]);
 
   if (isLoading) {
-    return <Loader />; 
+    return <Loader />;
   }
 
   return (
     <div className="App">
       <header className="App-header">
-        {isWelcomeVisible && <h1>Welcome to BualiCoin!</h1>} 
-        {isContentVisible &&  !isRegisterVisible && !isSigupVisible  && (
+        {isWelcomeVisible && <h1>Welcome to BualiCoin!</h1>}
+        {isContentVisible && !isRegisterVisible && !isSigupVisible && (
           <div className="image-container">
-
-            <img src={frameImage}  alt="Your Content" />
-            <button className="register-button"onClick={() => setIsSigupVisible(true)}>ثبت نام</button>
-            <button className="signup-button"onClick={() =>setIsRegisterVisible(true) }>ورود</button>
+            <img src={frameImage} alt="Your Content" />
+            <button className="register-button" onClick={() => setIsSigupVisible(true)}>ثبت نام</button>
+            <button className="signup-button" onClick={() => setIsRegisterVisible(true)}>ورود</button>
           </div>
         )}
-     
+
         {isRegisterVisible && !isSigupVisible && (
           <div className="register-container">
-           <img src={frameSigup}  alt="sigup" />
-            
+            <img src={frameSigup} alt="signup" />
             <form>
-          
-              <input className="input-username1"placeholder="نام کاربری" />
-            
+              <input className="input-username1" placeholder="نام کاربری" />
               <input className="input-password_v" placeholder="رمز عبور" />
-      
-              <button className="submit-button">واردشوید</button>
-              <button 
-        className="quetion1-button" 
-        onClick={() => {setIsSigupVisible(true); setIsRegisterVisible(false);}} > هنوز هیچ اکانتی نداری؟ </button>
-
-              
+              <button className="submit-button" onClick={(e) => {e.preventDefault();setIsProfileVisible(true) ;setIsSigupVisible(false); setIsRegisterVisible(false);setIsContentVisible(false);}}>وارد شوید</button>
+              <button className="quetion1-button" onClick={(e) => {e.preventDefault();setIsSigupVisible(true); setIsRegisterVisible(false);}}>هنوز هیچ اکانتی نداری؟</button>
             </form>
           </div>
         )}
-          {isSigupVisible && !isRegisterVisible &&(
+
+        {isSigupVisible && !isRegisterVisible && (
           <div className="Sabt-container">
-           <img src={frameSabt}  alt="sabt" />
-            
+            <img src={frameSabt} alt="sabt" />
             <form>
-          
-            <input className="input-name"placeholder="               نام " />
+              <input className="input-name" placeholder="نام" />
+              <input className="input-familiname" placeholder="نام خانوادگی" />
+              <input className="input-phonenumber" placeholder="شماره همراه" />
+              <input className="input-gmail" placeholder="ایمیل" />
+              <input className="input-password" placeholder="رمز عبور" />
+              <input className="input-repetitionpassword" placeholder="تکرار رمز عبور" />
+              <button className="sabt-button">ثبت</button>
+              <button className="quetion2-button" onClick={(e) => {e.preventDefault(); setIsSigupVisible(false); setIsRegisterVisible(true);}}>اکانتی برای ورود دارید؟</button>
+            </form>
+          </div>
+        )}
 
-            <input className="input-familiname"placeholder="         نام خانوادگی" />
+        {isProfileVisible && !isRegisterVisible &&(
+          <div className="Profile-container">
+            <img src={frameprofile} alt="profile" />=
+            <form>
             
-            <input className="input-phonenumber"placeholder="        شماره همراه" />
 
-            <input className="input-gmail"placeholder="              ایمیل  " />
-
-            <input className="input-password"placeholder="           رمز عبور   " />
-
-            <input className="input-repetitionpassword"placeholder="       تکرار رمز عبور  " />
-            
-            <button className="sabt-button">ثبت</button> 
-            <button 
-            className="quetion2-button" 
-            onClick={() => {setIsSigupVisible(false); setIsRegisterVisible(true);}} > اکانتی برای ورود دارید؟ </button>
-                    
             </form>
           </div>
         )}

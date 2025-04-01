@@ -79,9 +79,12 @@ function App() {
 
         {isProfileVisible && !isRegisterVisible &&(
           <div className="Profile-container">
-            <img src={frameprofile} alt="profile" />=
+            <img src={frameprofile} alt="profile" />
             <form>
-            
+            <button className="editpro-button" onClick={() => setIsRegisterVisible(true)}>ویرایش پروفایل</button>
+            <button className="wallet-button" onClick={() => setIsRegisterVisible(true)}>کیف پول</button>
+            <button className="chat-button" onClick={() => setIsRegisterVisible(true)}>پیام رسان</button>
+            <button className="home-button" onClick={() => setIsRegisterVisible(true)}>خانه</button>
 
             </form>
           </div>

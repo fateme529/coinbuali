@@ -4,7 +4,7 @@ import "./App.css";
 import frameImage from "./Frame2.png";
 import frameSigup from "./MacBook Air - 4.png";
 import frameSabt from "./MacBook Air - 7.png";
-import frameprofile from "./MacBook Air - 9.png";
+import frameprofile from "./MacBook Air - 91.png";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -56,7 +56,7 @@ function App() {
               <input className="input-username1" placeholder="نام کاربری" />
               <input className="input-password_v" placeholder="رمز عبور" />
               <button className="submit-button" onClick={(e) => {e.preventDefault();setIsProfileVisible(true) ;setIsSigupVisible(false); setIsRegisterVisible(false);setIsContentVisible(false);}}>وارد شوید</button>
-              <button className="quetion1-button" onClick={(e) => {e.preventDefault();setIsSigupVisible(true); setIsRegisterVisible(false);}}>هنوز هیچ اکانتی نداری؟</button>
+              <button className="quetion1-button" onClick={(e) => {e.preventDefault();setIsSigupVisible(true); setIsRegisterVisible(false);}}>هنوز هیچ اکانتی ندارید؟</button>
             </form>
           </div>
         )}

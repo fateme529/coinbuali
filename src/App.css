@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -5,12 +6,6 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (max-width: 600px) {
-  .button, .input {
-    width: 90%;
-  }
 }
 
 .App-header {
@@ -28,49 +23,70 @@
   color: #61dafb;
 }
 
-.image-container, .register-container, .Sabt-container,.Profile-container {
+
+.image-container, .register-container, .Sabt-container, .Profile-container {
   width: 100%;
   height: 100vh;
   overflow: auto;
   position: relative;
 }
 
-.image-container img, .register-container img, .Sabt-container img ,.Profile-container img{
+.image-container img, .register-container img, .Sabt-container img, .Profile-container img {
   width: 100%;
   height: auto;
   object-fit: contain;
 }
 
-.register-button, .signup-button, .submit-button, .quetion1-button, .sabt-button  ,.quetion2-button{
+
+.register-button, .signup-button, .submit-button, .quetion1-button, .sabt-button, .quetion2-button,
+.editpro-button, .wallet-button, .chat-button, .home-button {
   position: absolute;
   padding: 16px 35px;
   font-size: 16px;
   cursor: pointer;
   border: none;
-  background-color: #282c34;
-  color: white;
   border-radius: 10px;
 }
 
-.register-button { top: 10px; right: 209px; }
-.signup-button { top: 10px; right: 58px; width: 7.5%; }
-.submit-button { top: 509px; right: 603px; width: 22%; color: #B4B3BE; }
-.quetion1-button { top: 580px; right: 550px; color: #213A4A; }
-.quetion2-button { top: 620px; right: 550px; color: #213A4A; }
-.sabt-button { top: 560px; right: 625px; width: 20%; font-size: 25px; color: #B4B3BE; }
+.register-button, .signup-button, .submit-button, .sabt-button {
+  background-color: #282c34;
+  color: white;
+}
+
+.quetion1-button, .quetion2-button {
+  background: none;
+  color: #213A4A;
+}
+
+.editpro-button, .wallet-button, .chat-button, .home-button {
+  background-color: #282c34;
+  color: #757575;
+}
+
 
 .register-button:hover, .signup-button:hover, .submit-button:hover, .sabt-button:hover {
   background-color: #213A4A;
 }
 
-.quetion1-button:hover {
-  color: white;
-}
-.quetion2-button:hover {
+.quetion1-button:hover, .quetion2-button:hover {
   color: white;
 }
 
-.input-password_v, .input-username1, .input-name, .input-familiname, .input-phonenumber, .input-gmail, .input-password, .input-repetitionpassword {
+
+.register-button { top: 10px; right: 209px; }
+.signup-button { top: 10px; right: 58px; width: 7.5%; }
+.submit-button { top: 509px; right: 603px; width: 22%; color: #B4B3BE; }
+.quetion1-button { top: 580px; right: 550px; }
+.quetion2-button { top: 620px; right: 550px; }
+.editpro-button  {top: 385px; right: 682px; }
+.wallet-button   {top: 460px; right: 705px; }
+.chat-button     {top: 530px; right: 700px;}
+.home-button     {top: 610px; right: 715px;}
+.sabt-button { top: 560px; right: 625px; width: 20%; font-size: 25px; color: #B4B3BE; }
+
+
+.input-password_v, .input-username1, .input-name, .input-familiname, .input-phonenumber, 
+.input-gmail, .input-password, .input-repetitionpassword {
   position: absolute;
   padding: 14px;
   width: 11.5%;
@@ -83,6 +99,7 @@
   outline: none;
 }
 
+
 .input-name { top: 185px; right: 631px; }
 .input-familiname { top: 245px; right: 631px; }
 .input-phonenumber { top: 305px; right: 631px; }
@@ -92,11 +109,15 @@
 .input-password_v { top: 399px; right: 620px; max-width: 190px; }
 .input-username1 { top: 320px; right: 620px; max-width: 190px; }
 
+
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+@media (max-width: 600px) {
+  .button, .input {
+    width: 90%;
   }
 }

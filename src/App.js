@@ -91,7 +91,7 @@ function App() {
             <button className="sabt-button">ثبت</button> 
             <button 
             className="quetion2-button" 
-            onClick={() => {setIsSigupVisible(true); setIsRegisterVisible(false);}} > اکانتی برای ورود دارید؟ </button>
+            onClick={() => {setIsSigupVisible(false); setIsRegisterVisible(true);}} > اکانتی برای ورود دارید؟ </button>
                     
             </form>
           </div>

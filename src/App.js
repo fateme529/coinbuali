@@ -3,7 +3,7 @@ import Loader from "./Loader";
 import './App.css'; 
 import frameImage from './Frame2.png'; 
 import frameSigup from './MacBook Air - 4.png'; 
-import frameSabt from './MacBook Air - 5.png'; 
+import frameSabt from './MacBook Air - 6.png'; 
 
 
 
@@ -87,9 +87,8 @@ function App() {
             <input className="input-password"placeholder="           رمز عبور   " />
 
             <input className="input-repetitionpassword"placeholder="       تکرار رمز عبور  " />
-           
-  
-              
+            
+            <button className="sabt-button">ثبت</button>              
             </form>
           </div>
         )}

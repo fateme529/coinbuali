@@ -7,9 +7,9 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 600px) {
+  .button, .input {
+    width: 90%;
   }
 }
 
@@ -27,246 +27,67 @@
 .App-link {
   color: #61dafb;
 }
-.image-container {
-  width: 100%; 
-  height: 100vh;
-  overflow: auto; 
-  position: relative; 
-}
-.register-container{
-  width: 100%; 
-  height: 100vh;
-  overflow: auto; 
-  position: relative;
-  
-}
-.register-container img{
+
+.image-container, .register-container, .Sabt-container {
   width: 100%;
-  height: auto; 
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+}
+
+.image-container img, .register-container img, .Sabt-container img {
+  width: 100%;
+  height: auto;
   object-fit: contain;
 }
-.image-container img {
-  width: 100%;
-  height: auto; 
-  object-fit: contain; 
-}
-.Sabt-container{
-  width: 100%; 
-  height: 100vh;
-  overflow: auto; 
-  position: relative;
-}
 
-.Sabt-container img{
-
-  width: 100%;
-  height: auto; 
-  object-fit: contain; 
-}
-
-.register-button{
+.register-button, .signup-button, .submit-button, .quetion1-button, .sabt-button {
   position: absolute;
-  top: 10px; 
-  right: 209px; 
-
   padding: 16px 35px;
   font-size: 16px;
   cursor: pointer;
   border: none;
-  background-color:#282c34;
-  color: #ffffff;
+  background-color: #282c34;
+  color: white;
   border-radius: 10px;
 }
 
-.register-button:hover {
- background-color: #213A4A;
-}
- 
-.signup-button{
-  position: absolute;
-  top: 10px; 
-  right: 58px;
-  width: 7.5%; 
+.register-button { top: 10px; right: 209px; }
+.signup-button { top: 10px; right: 58px; width: 7.5%; }
+.submit-button { top: 509px; right: 603px; width: 22%; color: #B4B3BE; }
+.quetion1-button { top: 580px; right: 550px; color: #213A4A; }
+.sabt-button { top: 560px; right: 625px; width: 20%; font-size: 25px; color: #B4B3BE; }
 
-  padding: 16px 35px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  background-color:#282c34;
-  color: #ffffff;
-  border-radius: 10px;
-}
-
-.signup-button:hover {
- background-color: #213A4A;
-}
-
-.submit-button{
-  position: absolute;
-  top: 509px; 
-  right: 603px; 
-  width: 22%;
-  padding: 16px 35px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  background-color:#282c34;
-  color: #B4B3BE;
-  border-radius: 10px;
-}
-.submit-button:hover {
+.register-button:hover, .signup-button:hover, .submit-button:hover, .sabt-button:hover {
   background-color: #213A4A;
- }
- .input-password_v{
-  position: absolute;
-  top: 399px;
-  right: 620px;
-  padding: 20px;
-  margin: 10px;
-  width: 50%;
-  max-Width: 190px;
-  border: none;
-  border-Radius: 15px;
-  background-Color: #757575;  
-  color: white;
-  font-Size: 16px;
-  outline: none;
- }
-
-
- 
- .input-username1 {
-  position: absolute;
-  top: 320px;
-  right: 620px;
-  padding: 20px;
-  margin: 10px;
-  width: 50%;
-  max-Width: 190px;
-  border: none;
-  border-Radius: 15px;
-  background-Color: #757575;  
-  color:te;
-  font-Size: 16px;
-  outline: none;
- }
-.quetion1-button{
-  position: absolute;
-  top: 580px; 
-  right: 550px; 
-
-  padding: 16px 35px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  background-color:#282c34;
-  color: #213A4A;
-  border-radius: 10px;
 }
+
 .quetion1-button:hover {
- color: white;
+  color: white;
 }
- -----------------------------------------------------------------------------------------------------------------------------
 
-
- .input-name {
+.input-password_v, .input-username1, .input-name, .input-familiname, .input-phonenumber, .input-gmail, .input-password, .input-repetitionpassword {
   position: absolute;
-  top:  185px;
-  right:631px;
-  width: 11.5%; 
-
-  padding:14px;
-  max-Width: 199px;
+  padding: 14px;
+  width: 11.5%;
+  max-width: 199px;
   border: none;
-  border-Radius: 15px;
-  background-Color: #757575; 
+  border-radius: 15px;
+  background-color: #757575;
   color: white;
-  font-Size: 16px;
+  font-size: 16px;
   outline: none;
- }
+}
 
- .input-familiname {
-  position: absolute;
-  top:245px;
-  right:631px;
-  width: 11.5%; 
+.input-name { top: 185px; right: 631px; }
+.input-familiname { top: 245px; right: 631px; }
+.input-phonenumber { top: 305px; right: 631px; }
+.input-gmail { top: 365px; right: 631px; }
+.input-password { top: 425px; right: 631px; }
+.input-repetitionpassword { top: 485px; right: 631px; }
+.input-password_v { top: 399px; right: 620px; max-width: 190px; }
+.input-username1 { top: 320px; right: 620px; max-width: 190px; }
 
-  padding:14px;
-  max-Width: 199px;
-  border: none;
-  border-Radius: 15px;
-  background-Color: #757575; 
-  color: white;
-  font-Size: 16px;
-  outline: none;
- }
-
- .input-phonenumber {
-  position: absolute;
-  top: 305px;
-  right:631px;
-  width: 11.5%; 
-
-  padding:14px;
-  max-Width: 199px;
-  border: none;
-  border-Radius: 15px;
-  background-Color: #757575; 
-  color: white;
-  font-Size: 16px;
-  outline: none;
- }
-
- .input-gmail {
-  position: absolute;
-  top:  365px;
-  right:631px;
-  width: 11.5%; 
-
-  padding:14px;
-  max-Width: 199px;
-  border: none;
-  border-Radius: 15px;
-  background-Color: #757575; 
-  color: white;
-  font-Size: 16px;
-  outline: none;
- }
-
-
-
- .input-password {
-  position: absolute;
-  top:425px;
-  right:631px;
-  width: 11.5%; 
-
-  padding:14px;
-  max-Width: 199px;
-  border: none;
-  border-Radius: 15px;
-  background-Color: #757575; 
-  color: white;
-  font-Size: 16px;
-  outline: none;
- }
-
-
- .input-repetitionpassword {
-  position: absolute;
-  top: 485px;
-  right:631px;
-  width: 11.5%; 
-
-  padding:14px;
-  max-Width: 199px;
-  border: none;
-  border-Radius: 15px;
-  background-Color: #757575; 
-  color: white;
-  font-Size: 16px;
-  outline: none;
- }
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

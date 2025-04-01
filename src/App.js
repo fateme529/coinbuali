@@ -3,7 +3,7 @@ import Loader from "./Loader";
 import './App.css'; 
 import frameImage from './Frame2.png'; 
 import frameSigup from './MacBook Air - 4.png'; 
-import frameSabt from './MacBook Air - 6.png'; 
+import frameSabt from './MacBook Air - 7.png'; 
 
 
 
@@ -88,7 +88,11 @@ function App() {
 
             <input className="input-repetitionpassword"placeholder="       تکرار رمز عبور  " />
             
-            <button className="sabt-button">ثبت</button>              
+            <button className="sabt-button">ثبت</button> 
+            <button 
+            className="quetion2-button" 
+            onClick={() => {setIsSigupVisible(true); setIsRegisterVisible(false);}} > اکانتی برای ورود دارید؟ </button>
+                    
             </form>
           </div>
         )}
